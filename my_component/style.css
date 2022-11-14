@@ -1,0 +1,24 @@
+button[kind="header"] {
+    display: none;
+}
+
+section[data-testid='stSidebar'] > div:nth-of-type(1) {
+    background-color: rgb(255, 255, 255);
+}
+
+header[data-testid='stHeader']  {
+    display: none;
+}
+
+iframe[title="__init__.my_component"] {
+    margin-top: -100px;
+    margin-left: -20px;
+    bottom: 0px;
+    position: fixed;
+    height:100vh;
+    
+}
+
+footer {
+    visibility: hidden;
+}    
