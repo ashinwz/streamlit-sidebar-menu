@@ -1,12 +1,12 @@
-# Streamlit Component template in Vue.js
+# Streamlit siderbar menu in Vue.js
 
-Vue 3 template to build a Streamlit component. Uses Vue.js scoped slot to send parameters from Streamlit Python script into `args` props of your component.
+Using Vue.js to build up the sidebar menu component and the menu bar supports switching multi-pages
 
 ## Setup
 
-[Copy paste](https://github.com/streamlit/component-template#quickstart) of the original component-template quickstart.
+[Copy paste](https://github.com/ashinwz/streamlit-sidebar-menu.git) of the original demo.
 
-- Ensure you have [Python 3.6+](https://www.python.org/downloads/), [Node.js](https://nodejs.org), and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
+- Ensure you have [Python 3.8+](https://www.python.org/downloads/), [Node.js](https://nodejs.org), and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.
 - Clone this repo.
 - Create a new Python virtual environment for the template:
 
@@ -32,11 +32,9 @@ $ streamlit run my_component/__init__.py  # run the example
 ```
 
 - If all goes well, you should see something like this:
-  ![Quickstart Success](quickstart.png)
-- Modify the frontend code at `my_component/frontend/src/MyComponent.vue`.
-  - Parameters passed by Python script are made available in `args` props.
-- Modify the Python code at `my_component/__init__.py`.
-- Feel free to rename the `my_component` folder, `MyComponent.vue` file with its import in `App.vue`, and package name in `setup.py` and `package.json`.
+  ![Quickstart Success](./images/st-sidebar-demo.PNG)
+  ![Quickstart Success](./images/st-sidebar-demo-close.PNG)
+
 
 ## Resources
 
