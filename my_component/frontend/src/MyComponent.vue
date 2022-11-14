@@ -20,27 +20,6 @@
             <div class="menu">
 
                 <ul class="menu-links">
-                    <!-- <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-home-alt icon' ></i>
-                            <span class="text nav-text" @click="onClicked">Introduction</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text" @click="onClicked">Data upload</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-bell icon'></i>
-                            <span class="text nav-text">Run</span>
-                        </a>
-                    </li> -->
-
                     <li class="nav-link" v-for="(option,i) in args.options" :key="option">
                         <hr :class="{vr: isHorizontal}" v-if="option === '---'" >
                         <a v-else href="#" :class="{active: i == selectedIndex}" 
@@ -49,28 +28,6 @@
                             <span class="text nav-text">{{option}}</span>
                         </a>
                     </li>
-                    
-                    <!-- <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-pie-chart-alt icon' ></i>
-                            <span class="text nav-text">Analytics</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-heart icon' ></i>
-                            <span class="text nav-text">Likes</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-link">
-                        <a href="#">
-                            <i class='bx bx-wallet icon' ></i>
-                            <span class="text nav-text">Wallets</span>
-                        </a>
-                    </li> -->
-
                 </ul>
             </div>
 
@@ -81,19 +38,6 @@
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
-
-                <!-- <li class="mode" >
-                    <div class="sun-moon">
-                        <i class='bx bx-moon icon moon'></i>
-                        <i class='bx bx-sun icon sun'></i>
-                    </div>
-                    <span class="mode-text text">Dark mode</span>
-
-                    <div class="toggle-switch">
-                        <span class="switch"></span>
-                    </div>
-                </li> -->
-                
             </div>
         </div>
 
@@ -118,12 +62,6 @@ function getFullIconName(name) {
 export default {
   name: "MyComponent",
   props: ["args"], 
-//   methods: {
-//     onSwitch (event) {
-//       click()
-//     }
-//   },
-
 
   setup(props) {
     useStreamlit() // lifecycle hooks for automatic Streamlit resize
@@ -133,9 +71,6 @@ export default {
 
     const icons = ref(props.args.icons)
     for (let i = 0; i < props.args.icons.length; i++) {
-        // if (!icons.value[i]) {
-        //     icons.value[i] = "bx-home-alt";
-        // }
         icons.value[i] = getFullIconName(icons.value[i]);
     }
 

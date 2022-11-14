@@ -104,21 +104,3 @@ print(selected)
 
 if selected in page_names_to_funcs.keys():
     page_names_to_funcs[selected]["fn"]()
-
-
-# if new_num_clicks == st.session_state.value + 1 :
-#     # st.markdown("Change, You've clicked %s times!" % int(new_num_clicks))
-#     st.session_state.value  = new_num_clicks
-#     if new_num_clicks %2 !=0:
-#         st.markdown(
-#             """
-#             <style>
-#                 section[data-testid='stSidebar'] > div:nth-of-type(1) {
-#                     width: 5vh;
-#                     transition: all 0.5s ease;
-#                 }
-#             </style>
-#             """
-#         , unsafe_allow_html=True)
-#     else:
-#         pass
